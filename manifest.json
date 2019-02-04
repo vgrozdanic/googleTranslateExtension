@@ -1,0 +1,20 @@
+{
+  "manifest_version": "2",
+  "api_version": "1",
+  "name": "GT extension",
+  "description": "Extension Description",
+  "developer_name": "vgroking",
+  "icon": "images/icon.png",
+  "options": {
+    "query_debounce": 0.1
+  },
+  "preferences": [
+    {
+      "id": "gt_kw",
+      "type": "keyword",
+      "name": "GT",
+      "description": "GT extension",
+      "default_value": "gt"
+    }
+  ]
+}
