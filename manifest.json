@@ -1,19 +1,19 @@
 {
   "manifest_version": "2",
   "api_version": "1",
-  "name": "GT extension",
-  "description": "Extension Description",
-  "developer_name": "vgroking",
+  "name": "Google translate extension",
+  "description": "Google translate extension for short translations",
+  "developer_name": "Vjeran Grozdanic",
   "icon": "images/icon.png",
   "options": {
-    "query_debounce": 0.1
+    "query_debounce": 0.2
   },
   "preferences": [
     {
-      "id": "gt_kw",
+      "id": "Google_translate_id",
       "type": "keyword",
-      "name": "GT",
-      "description": "GT extension",
+      "name": "Google Translator",
+      "description": "Google translate activation keyword",
       "default_value": "gt"
     }
   ]
