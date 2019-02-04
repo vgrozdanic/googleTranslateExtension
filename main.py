@@ -16,16 +16,17 @@ def translate(text, source="", destination=""):
     translator = Translator();
     translatedText=""
     ERROR_TEXT = "Something went wrong!"
+    DEFAULT_DESTINATION = "hr"
 
     if (source == "" and destination == ""):
         try: 
-            translatedText = translator.translate(text).text
+            translatedText = translator.translate(text, dest=DEFAULT_DESTINATION).text
         except ValueError:
             translatedText = ERROR_TEXT
     
-    elif (source != "" and destination == ""):
+    elif (source == "" and destination != ""):
         try: 
-            translatedText = translator.translate(text, src=source).text
+            translatedText = translator.translate(text, dest=destination).text
         except ValueError:
             translatedText = ERROR_TEXT
     
