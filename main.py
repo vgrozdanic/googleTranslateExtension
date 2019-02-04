@@ -85,7 +85,7 @@ class KeywordQueryEventListener(EventListener):
     def on_event(self, event, extension):
         argument = event.get_argument()
         text, src, dest = parse(argument)
-        translation = text + "|-|" + src + "|.|" + dest
+        translation = translate(text, src, dest)
 
         return RenderResultListAction([ExtensionResultItem(icon='images/icon.png',
                                                            name=translation,
